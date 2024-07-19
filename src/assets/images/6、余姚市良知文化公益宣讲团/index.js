@@ -1,4 +1,4 @@
-import p1 from './12月11日，余姚市良知文化公益宣讲团线上开展了“善美姚城，良知先行”——新时代文明创投项目之讲述身边的孝道故事，本次活动让大家对孝道有了更深入具体的认识，增强了“以孝传家”的决心和信心，对传承孝道家风的途径和方法有了更清晰的把握。.png'
+import p1 from './12月.png'
 import p2 from './212d9ba2d4105822fe546c3bfccbe5d.png'
 import p3 from './5c8ec315e70a4586d0bfb3e194715db.png'
 import p4 from './5cb89da0add43ef8108c5f67c10b993.png'
