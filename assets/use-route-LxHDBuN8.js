@@ -1,0 +1,1 @@
+import{ao as n}from"./index-Bv-e0SQX.js";const c={to:[String,Object],url:String,replace:Boolean};function a({to:o,url:e,replace:t,$router:r}){o&&r?r[t?"replace":"push"](o):e&&(t?location.replace(e):location.href=e)}function i(){const o=n().proxy;return()=>a(o)}export{a,c as r,i as u};
