@@ -7,7 +7,7 @@ import { VantResolver } from '@vant/auto-import-resolver'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base:process.env.VITE_BASE_URL || '/',
+  base:import.meta.env.VITE_BASE_URL || '/',
   resolve: {
     alias: {
       "@": resolve(__dirname, 'src'),
