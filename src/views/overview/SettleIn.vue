@@ -2,7 +2,7 @@
   <div>
     <div class="gap-y-4 gap-x-4 grid grid-cols-2">
       <div
-        class="rounded shadow flex flex-col justify-between items-center"
+        class="box-item flex flex-col justify-between items-center"
         v-for="item of OrganizationMap"
         :key="item.name"
         @click="$router.push({ name: 'SettleInDetail', params: { name: item.name } })"
@@ -19,7 +19,7 @@
       <h1 class="h1">救援队</h1>
       <div class="gap-y-4 gap-x-4 grid grid-cols-2">
         <div
-          class="rounded shadow flex flex-col items-center"
+          class="box-item flex flex-col items-center"
           v-for="item of RescueTeam"
           :key="item.name"
           @click="$router.push({ name: 'SettleInDetail', params: { name: item.name } })"

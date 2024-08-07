@@ -1,11 +1,11 @@
 <template>
   <div>
-    <van-tabs v-model:active="active" @click-tab="handleTabClick">
+    <van-tabs shrink v-model:active="active" @click-tab="handleTabClick">
       <van-tab v-for="(welfareItems, year) in WelfareList" :title="year">
         <div class="py-4">
           <div class="gap-y-4 gap-x-4 grid grid-cols-2">
             <div
-              class="rounded shadow flex flex-col items-center"
+              class="box-item flex flex-col items-center"
               v-for="item of welfareItems"
               :key="item.name"
               @click="go(item.link)"

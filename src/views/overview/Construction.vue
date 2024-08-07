@@ -2,6 +2,7 @@
   <div>
     <van-cell-group inset class="flex flex-col gap-y-4">
       <van-cell
+        class="box-item"
         v-for="article in WechatArticles"
         :key="article.title"
         :title="article.title"

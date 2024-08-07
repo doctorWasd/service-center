@@ -7,4 +7,8 @@
   .h1 {
     @apply font-semibold text-xl my-4;
   }
+
+  .box-item {
+    @apply rounded-xl shadow bg-white;
+  }
 }

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <van-tabs v-model:active="active" @click-tab="handleTabClick">
+    <van-tabs shrink v-model:active="active" @click-tab="handleTabClick">
       <van-tab v-for="d in data" :key="d.routeName" :title="d.name">
         <div class="py-4">
           <router-view></router-view>

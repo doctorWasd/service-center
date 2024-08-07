@@ -2,7 +2,7 @@
   <div>
     <div class="gap-y-4 gap-x-4 grid grid-cols-2">
       <div
-        class="rounded shadow flex flex-col items-center"
+        class="box-item flex flex-col items-center"
         v-for="item of ITEMS"
         :key="item.name"
         @click="$router.push({ name: 'ItemDetail', params: { name: item.name } })"

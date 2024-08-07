@@ -1,4 +1,11 @@
 :root #app {
   --van-primary-color: #cc252d;
+
   --van-swipe-indicator-active-background: white;
+
+  --van-tabs-nav-background: transparent;
+  --van-tab-font-size: 4.26666667vw;
+
+  --van-cell-group-background: transparent;
+  --van-cell-font-size: 4.26666667vw;
 }
