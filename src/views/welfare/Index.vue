@@ -1,6 +1,6 @@
 <template>
   <div>
-    <van-tabs shrink v-model:active="active" @click-tab="handleTabClick">
+    <van-tabs shrink v-model:active="active">
       <van-tab v-for="(welfareItems, year) in WelfareList" :title="year">
         <div class="py-4">
           <div class="gap-y-4 gap-x-4 grid grid-cols-2">
@@ -26,7 +26,5 @@ import { go } from '@/utils/link';
 import { ref } from 'vue';
 
 const active = ref(0);
-
-const handleTabClick = () => {};
 </script>
 <style scoped></style>
