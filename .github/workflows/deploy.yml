@@ -1,10 +1,7 @@
 name: Deploy to GitHub Pages
 
 # 工作流触发器：在push时触发工作流
-on:
-  push:
-    branches:
-      - main # 这里指定代码的主要分支
+on: [workflow_dispatch]
 
 jobs:
   deploy:
@@ -25,8 +22,17 @@ jobs:
       - name: Build the website
         run: yarn run build
 
+      - name: Test Secret Access
+        run: |
+          if [ -z "${{ secrets.ACTIONS_DEPLOY_KEY }}" ]; then
+            echo "Secret is not set"
+            exit 1
+          else
+            echo "Secret is set"
+          fi
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          personal_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           publish_dir: ./dist # 这里指定生成静态网站文件的目录
